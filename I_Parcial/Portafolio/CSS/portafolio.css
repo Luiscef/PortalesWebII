@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(180, 180, 180);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #101010;
+    color: rgb(200, 200, 200);
+}
+
+header h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+header nav {
+
+    justify-content: center;
+
+}
+
+header nav ul {
+
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+header nav li a {
+    display: inline-block;
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+    padding: 4rem 10rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav li a:hover {
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+
+main {
+    padding: 5rem;
+    margin: 10px;
+}
+
+.info{
+    padding: 1rem 0 8rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+.info img {
+    display: block;
+    margin: 0 auto 1rem auto;
+    max-width: 190px;
+    border-radius: 100px;
+    border: 2px solid rgb(60, 60, 60);
+}
+
+.info p {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.info a {
+    color: rgb(80, 170, 250);
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .frametrack {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    transition: left 0.5s ease-in-out;
+}
+
+
+.slider .frametrack .slide {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+}
+
+.slider .frametrack .slide img {
+    display: block;
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+
+.container {
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #222;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: rgb(200, 200, 200);
+}
+
+.card img {
+    width: 100%;
+    height: 50%; 
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(80, 170, 250);
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.card a:hover {
+    background-color: rgb(49, 107, 165);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
